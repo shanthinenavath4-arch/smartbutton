@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>SmartButton</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="page">
+
+    <div class="smart-card">
+
+      <!-- HEADER -->
+      <header class="header">
+
+        <div class="brand">
+          <div class="logo">SB</div>
+
+          <span>SMARTBUTTON</span>
+        </div>
+
+        <div class="ready">
+          <i></i>
+          READY
+        </div>
+
+      </header>
+
+
+      <!-- TITLE -->
+      <div class="title-area">
+
+        <span class="eyebrow">
+          INTERACTION LAB
+        </span>
+
+        <h1>Smart Button</h1>
+
+      </div>
+
+
+      <!-- MAIN BUTTON -->
+      <button
+        id="smartButton"
+        class="smart-button"
+        type="button"
+      >
+
+        <span id="buttonIcon">✦</span>
+
+        <span id="buttonText">
+          RUN
+        </span>
+
+        <span id="buttonSmall">
+          →
+        </span>
+
+      </button>
+
+
+      <p class="hint">
+        Click · Double Click · Keyboard
+      </p>
+
+
+      <!-- DIVIDER -->
+      <div class="divider"></div>
+
+
+      <!-- STATS -->
+      <div class="stats">
+
+        <div class="stat">
+
+          <span>CLICKS</span>
+
+          <strong id="clickCount">
+            0
+          </strong>
+
+        </div>
+
+
+        <div class="stat">
+
+          <span>PROGRESS</span>
+
+          <strong id="progressText">
+            0%
+          </strong>
+
+          <div class="progress">
+            <div id="progressBar"></div>
+          </div>
+
+        </div>
+
+
+        <div class="stat">
+
+          <span>STATUS</span>
+
+          <div class="status">
+
+            <i id="statusDot"></i>
+
+            <strong id="status">
+              Ready
+            </strong>
+
+          </div>
+
+        </div>
+
+
+        <div class="stat">
+
+          <span>LAST ACTION</span>
+
+          <strong
+            id="lastClick"
+            class="last-action"
+          >
+            —
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <!-- DIVIDER -->
+      <div class="divider"></div>
+
+
+      <!-- ACTIVITY -->
+      <div class="activity">
+
+        <div class="activity-top">
+
+          <span class="eyebrow">
+            RECENT ACTIVITY
+          </span>
+
+          <button id="clearHistory">
+            CLEAR
+          </button>
+
+        </div>
+
+
+        <div
+          id="activityList"
+          class="activity-list"
+        >
+
+          <div class="empty">
+            No interactions yet
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- CONTROLS -->
+      <div class="controls">
+
+        <button id="resetButton">
+          RESET
+        </button>
+
+        <button id="themeButton">
+          ◐ THEME
+        </button>
+
+      </div>
+
+
+      <!-- FOOTER -->
+      <footer>
+
+        HTML
+        <span>•</span>
+        CSS
+        <span>•</span>
+        JAVASCRIPT
+
+      </footer>
+
+    </div>
+
+  </div>
+
+
+  <!-- TOAST -->
+  <div id="toast" class="toast">
+
+    <span>✓</span>
+
+    <p id="toastMessage">
+      Done
+    </p>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
